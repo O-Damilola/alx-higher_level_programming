@@ -3,4 +3,6 @@ def print_last_digit(number):
     str1 = str(number)
     list1 = list(str1)
     last_digit = list1[-1]
-    return int(last_digit)
+    return (last_digit)
+
+print(print_last_digit(10246))

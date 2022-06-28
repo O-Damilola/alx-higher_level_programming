@@ -1,8 +1,12 @@
 #!/usr/bin/python3
+charend = ", "
+for i in range(0, 100):
+    digit2 = i % 10
+    digit1 = i / 10
+    if i < 10 and digit1 < digit2:
+        print("{}{}".format(0, i), end=charend)
+    elif digit1 < digit2:
+        if i == 89:
+            charend = "\n"
+        print(i, end=charend)
 
-arr = []
-for i in range(0, 10):
-    for j in range(0, 10):
-        if j not in arr:
-            print("%d%d" %(i,j), end=', ')
-        arr.append(i)

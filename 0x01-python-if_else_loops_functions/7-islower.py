@@ -2,7 +2,7 @@
 
 def _islower(ch):
     x = ord(ch)
-    if x in range(97, 123):
+    if x > 96 and x < 123
         return True
     else:
         return False
