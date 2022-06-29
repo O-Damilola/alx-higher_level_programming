@@ -1,4 +1,5 @@
 #!/usr/bin/python3
-for x in range(97, 123):
-    don = chr(x)
-    print("{}".format(don), end='')
+number = 97
+while number <= 122:
+    print("{}".format(chr(number)), end="")
+    number += 1
