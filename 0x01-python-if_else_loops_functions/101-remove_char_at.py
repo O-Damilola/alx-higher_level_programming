@@ -6,7 +6,7 @@ def remove_char_at(str, n):
         arr = list(str)
         arr.remove(arr[n])
         str1 = ''.join(arr)
-        return(str1)
+    return(str1)
 
 
 
