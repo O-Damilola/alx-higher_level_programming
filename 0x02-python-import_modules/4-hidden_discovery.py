@@ -1,11 +1,6 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
-    import hidden_4 as hid_4
-    jane = []
-    for i in dir(hid_4):
-        if i.startswith('_'):
-            continue
-        else:
-            jane.append(i)
-    for x in jane:
-        print(x)
+    import hidden_4
+    for a in dir(hidden_4):
+        if a[0] != "_" and a[1] != "_":
+            print("{}".format(a))
