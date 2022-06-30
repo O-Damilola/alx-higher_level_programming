@@ -23,6 +23,7 @@ if __name__ == "__main__":
         print("Unknown operator. Available operators: +, -, * and /", end='\n')
         exit(1)
     print("{} {} {} = {}".format(a, operator, b, result))
+    exit(0)
     
         
     
