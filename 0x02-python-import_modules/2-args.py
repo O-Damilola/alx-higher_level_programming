@@ -1,18 +1,14 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
-    from sys import argv as arr
-    if len(arr)== 1:
-        print("{} arguments.".format(len(arr)-1)) 
-    elif len(arr)== 2:
-        print("{} argument:".format(len(arr)-1))
+    import sys
+    total = len(sys.argv)
+    if total <= 1:
+        print("0 argument.")
     else:
-        print("{} arguments.".format(len(arr)-1))
-        for i in arr:
-            if i != 0 and i != len(arr):
-                print("{}: {}".format(i, arr[i]), end='\n')
-            if i != 0 and i == len(arr):
-                print("{}: {}".format(i, arr[i]))
-            
+        if total == 2:
+            print("{:d} argument:".format(total - 1))
+        else:
+            print("{:d} arguments:".format(total - 1))
+        for i in range(1, total):
+            print("{:d}: {}".format(i, sys.argv[i]))
 
-
-arr([Hello, Welcome, To, The, Best, School])
