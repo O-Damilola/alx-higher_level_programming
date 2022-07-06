@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 def complex_delete(a_dictionary, value):
-    myDel = []
+    janeDel = []
     for i, j in a_dictionary.items():
         if j == value:
-            myDel.append(i)
-    for i in myDel:
+            janeDel.append(i)
+    for i in janeDel:
         a_dictionary.pop(i)
     return a_dictionary
