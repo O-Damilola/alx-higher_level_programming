@@ -18,18 +18,3 @@ def roman_to_int(roman_string):
         int_sum += int_list[-1]       
         return (int(int_sum))
     return 0
-
-roman_number = None
-print("{} = {}".format(roman_number, roman_to_int(roman_number)))
-
-roman_number = 'VII'
-print("{} = {}".format(roman_number, roman_to_int(roman_number)))
-
-roman_number = "IX"
-print("{} = {}".format(roman_number, roman_to_int(roman_number)))
-
-roman_number = "LXXXVII"
-print("{} = {}".format(roman_number, roman_to_int(roman_number)))
-
-roman_number = "DCCVII"
-print("{} = {}".format(roman_number, roman_to_int(roman_number)))
