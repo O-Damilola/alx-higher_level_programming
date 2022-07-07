@@ -5,7 +5,5 @@ def weight_average(my_list=[]):
     for k in my_list:
         product += k[0] * k[1]
         sum += k[1]
-    print(sum)
-    print(product)
-    average = product / sum
+    average = product/sum
     return average
