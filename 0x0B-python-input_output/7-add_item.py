@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # 7-add_item.py
-""
+"""
 Script that adds all arguments to a Python list, and then saves them to a file.
 """
 
