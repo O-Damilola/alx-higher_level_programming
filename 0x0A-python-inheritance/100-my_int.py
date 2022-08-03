@@ -1,11 +1,16 @@
 #!/usr/bin/python3
+"""MyInt module.
+Contains a class MyInt that inherits from int.
+"""
+
+
 class MyInt(int):
-    """ Class that inherits from class int"""
+    """Defines the MyInt class."""
 
     def __eq__(self, other):
-        """ Method that returns != check """
-        return int.__ne__(self, other)
+        """Sets the == behaviour."""
+        return int(self) != other
 
     def __ne__(self, other):
-        """ Method that returns == check """
-        return int.__eq__(self, other)
+        """Sets the != behaviour."""
+        return int(self) == other
